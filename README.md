@@ -1,18 +1,15 @@
-# Helm Charts
-Usage
+# Costimizer Helm Charts
 
-Helm must be installed to use the charts. Please refer to Helm's documentation to get started.
+This repository contains Helm charts for deploying Costimizer applications.
 
-Once Helm has been set up correctly, add the repo as follows:
+## Prerequisites
 
+Before using the Helm charts, ensure that [Helm](https://helm.sh/docs/intro/install/) is installed on your machine. If you need help with setting up Helm, please refer to the official [Helm documentation](https://helm.sh/docs/intro/install/).
+
+## Adding the Repository
+
+Once Helm is installed, add the `costimizer` repository to your Helm configuration by running the following command:
+
+```bash
 helm repo add costimizer https://costimizerinc.github.io/helm-charts
 
-If you had already added this repo earlier, run helm repo update to retrieve the latest versions of the packages. You can then run helm search repo costimizer to see the charts.
-
-To install the chart:
-
-helm install <chart-name> costimizerinc/<chart-name>
-
-To uninstall the chart:
-
-helm uninstall <chart-name>
